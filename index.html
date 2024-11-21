@@ -12,7 +12,7 @@
             min-height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background-color:pink;
         }
 
         .card {
@@ -56,11 +56,53 @@
         .button:hover {
             background-color: #45a049;
         }
+        .heart {
+      /* position:absolute; */
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      transform: rotate(-45deg);
+    }
+
+    .heart:before,
+    .heart:after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      border-radius: 50%;
+    }
+
+    .heart:before {
+      top: -15px;
+      left: 0;
+    }
+
+    .heart:after {
+      top: 0;
+      left: 15px;
+    }
+
+    .heart1 {
+      top: 10px;
+      right: -10px;
+      animation: float 3s infinite ease-in-out;
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(-45deg);
+      }
+      50% {
+        transform: translateY(-10px) rotate(-45deg);
+      }
+    }
     </style>
 </head>
 <body>
     <div class="card">
         <img src="BU FARHA.jpg" alt="Foto Guru">
+         <div class="heart heart1"></div>
         <div class="title">Selamat Hari Guru BU FARHA</div>
         <div class="message">Terima kasih atas dedikasi dan ilmu yang telah diberikan kepada kami!</div>
         <a href="pesan.html" class="button" >KLIK</a>
