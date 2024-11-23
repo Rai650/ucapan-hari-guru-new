@@ -1,10 +1,15 @@
 *{
-    margin: 0;
-    padding: 5;
+    margin: 5;
+    padding: 10;
 }
 body{
     
     background-color: aquamarine;
+}
+.container {
+    display: flex;
+    justify-content: center;
+
 }
 .button {
     padding: 10px 20px;
@@ -15,19 +20,61 @@ body{
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    font-size: 1em;
+    font-size:25px;
     height: auto;
     width: 3cm;
-    align-content: center;
-    
+}
+.teacher-day {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    margin: 20px auto;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 15px;
+    /* background-color: #F9FFF6; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.icons{
+    font-size: 70px;
+    margin: 10px 0;
+    color: #4CAF50;
+}
+.icons2{
+    font-size:70px ;
+    margin: 10px 0;
+    justify-content: center;
+    /* align-content: end; */
+    bottom: 10px;
+}
+.love-icon {
+    position: absolute; 
+    top: 10px;     
+    right: 35px;    
+    font-size: 70px; 
+    cursor: pointer; 
+    /* transition: transform 0.3s ease; */
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
 }
 .container h2{
+    display: flex;
     color: black;
-    font-size:20px;
+    font-size:30px;
+    margin: 35px;
+    padding: 20px;
     border-right: 2px solid black;
     overflow: hidden;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     font-family:'Times New Roman', Times, serif;
     animation:mengetik 5s steps(300, end);
 }
@@ -35,5 +82,3 @@ body{
     from{ width: 0;}
     to{ width: 100%;}
 }
-
-  
